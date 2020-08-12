@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Classes flexbox</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style type="text/css">
+      .caixa {
+        background: #CEECF5;
+        width: 300px;
+        height: 150px;
+     
+      }
+      .item {
+        border:1px solid black;
+        padding: 5px;
+        height: 30px;
+        width: 60px;
+        font-size: 9px;
+        background: #F5ECCE;
+      }
+
+      h2{
+      	font-size: 20px;
+      }
+      
+    </style>
+
+  </head>
+
+  <body>
+
+    <div>
+
+        <h3>Direção</h3>
+
+    	<h2>d-flex flex-row(Padrão)</h2>
+    	<div class="caixa d-flex flex-row">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+     	</div>
+     	<br><br>
+
+    	<h2>d-flex flex-row-reverse</h2>
+    	<div class="caixa d-flex flex-row-reverse">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+    	</div>
+    	<br><br>
+
+    	<h2>d-flex flex-column</h2>
+    	<div class="caixa d-flex flex-column">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+    	</div>
+    	<br><br>
+
+    	<h2>d-flex flex-column-reverse</h2>
+    	<div class="caixa d-flex flex-column-reverse">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+    	</div>
+    	<br><br>
+    	</div>
+
+        <h3>Conteúdo justificado</h3>
+
+
+    	<h2>d-flex justify-content-start</h2>
+    	<div class="caixa d-flex justify-content-start">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+    	</div>
+    	<br><br>
+
+		<h2>d-flex justify-content-center</h2>
+    	<div class="caixa d-flex justify-content-center">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+    	</div>
+    	<br><br>
+
+    	<h2>d-flex justify-content-end</h2>
+    	<div class="caixa d-flex justify-content-end">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+    	</div>
+    	<br><br>
+
+    	<h2>d-flex justify-content-around</h2>
+    	<div class="caixa d-flex justify-content-around">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+    	</div>
+    	<br><br>
+
+    	<h2>d-flex justify-content-between</h2>
+    	<div class="caixa d-flex justify-content-between">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+    	</div>
+    	<br><br>
+
+        <h3>Alinhamento</h3>
+
+    	<h2>d-flex align-items-start</h2>
+    	<div class="caixa d-flex align-items-start">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+    	</div>
+    	<br><br>
+
+    	<h2>d-flex align-items-center</h2>
+    	<div class="caixa d-flex align-items-center">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+    	</div>
+    	<br>
+    	<br>
+
+    	<h2>d-flex align-items-end</h2>
+    	<div class="caixa d-flex align-items-end">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+    	</div>
+    	<br><br>
+
+    	<h2>d-flex align-items-baseline</h2>
+    	<div class="caixa d-flex align-items-baseline">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+    	</div>
+    	<br>
+    	<br>
+
+    	<h2>d-flex align-items-stretch</h2>
+    	<div class="caixa d-flex align-items-stretch">
+        <div class="item" style="padding-top: 30px;">Flex item 1</div>
+        <div class="item" style="padding-top: 40px;">Flex item 2</div>
+        <div class="item" style="padding-top: 50px;">Flex item 3</div>
+    	</div>
+    	<br><br>
+    	</div>
+
+        <h3>Margens automáticas</h3>
+
+        <h2>direita</h2>
+        <div class="caixa d-flex">
+        <div class="item">item</div>
+        <div class="item mr-auto">item mr-auto</div>
+        <div class="item">item</div>
+        </div>
+        <br><br>
+
+        <h2>esquerda</h2>
+        <div class="caixa d-flex">
+        <div class="item">item</div>
+        <div class="item ml-auto">item ml-auto</div>
+        <div class="item">item</div>
+        </div>
+        <br>
+        <br>
+
+        <h2>topo</h2>
+        <div class="caixa d-flex flex-column">
+        <div class="item">Flex item 1</div>
+        <div class="item mt-auto">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+        </div>
+        <br><br>
+
+        <h2>abaixo</h2>
+        <div class="caixa d-flex flex-column">
+        <div class="item">Flex item 1</div>
+        <div class="item mb-auto">mb-auto</div>
+        <div class="item">Flex item 3</div>
+        </div>
+        <br><br>
+
+        <h3>Quebra</h3>
+
+        <h2>d-flex flex-nowrape</h2>
+        <div class="caixa d-flex flex-nowrape">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+        <div class="item">Flex item 4</div>
+        <div class="item">Flex item 5</div>
+        <div class="item">Flex item 6</div>
+        <div class="item">Flex item 7</div>
+        <div class="item">Flex item 8</div>
+        </div>
+        <br><br>
+
+        <h2>d-flex flex-wrap</h2>
+        <div class="caixa d-flex flex-wrap">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+        <div class="item">Flex item 4</div>
+        <div class="item">Flex item 5</div>
+        <div class="item">Flex item 6</div>
+        </div>
+        <br><br>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - input group</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  </head>
+
+  <body style="margin-bottom: 200px;padding: 16px;">
+
+    <form>
+          <!-- formulários 
+        classe: form-control-<opcoes>
+        opções: sm, lg
+    -->
+        
+        <!-- caixas de texto -->
+        <div class="form-group">
+            <label for="usuario">Usuário</label>
+            <input class="form-control" type="text" id="usuario" placeholder="Digite seu usuário">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="email" id="email" placeholder="Digite seu email" readonly>
+            <small class="form-text">Email será validado</small>
+        </div>
+
+        <!-- select -->
+        <div class="form-group">
+            <label for="estados">Estados</label>
+            <select class="form-control" id="estados">
+                <option>Acre</option>
+                <option>Alagoas</option>
+                <option>Amapá</option>
+                <option>...</option>
+            </select>
+        </div>
+
+        <!-- textarea -->
+        <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="3"></textarea>
+        </div>
+
+        <!-- file input -->
+        <div class="form-group">
+            <label for="arquivo">Arquivo</label>
+            <input class="form-control-file" type="file" id="arquivo">
+        </div>
+
+
+        <!-- custom file input -->
+        <div class="custom-file">
+            <input class="custom-file-input" type="file" id="arquivo">
+            <label class="custom-file-label">Selecione arquivo</label>
+        </div>
+        <br><br>
+
+        <!-- range -->
+        <div class="form-group">
+            <label id="range">Satisfação</label>
+            <input class="custom-range" type="range" 
+            id="range" min="1" max="5">
+        </div>
+
+        <!-- button -->
+        <input class="btn btn-primary" type="submit" value="Salvar">
+
+    </form>
+    <br><br>
+
+    <!-- Formulário inline -->
+    <form class="form-inline">
+        <input class="form-control mr-2" type="text" placeholder="Digite seu usuário">
+        <input class="form-control mr-2" type="password" placeholder="Digite sua senha">
+        <input  class="btn btn-primary" type="submit" value="Logar">
+    </form>
+    <br><br>
+
+    <!-- 
+    Validação de formulário 
+    Classes: is-valid, is-invalid, invalid-feedback, valid-feedback
+    -->
+    <form>
+        
+        <div class="form-group">
+            <label for="email-usuario">email</label>
+            <input class="form-control is-valid" type="text" id="email-usuario" placeholder="Digite seu e-mail">
+            <div class="valid-feedback">
+                Email válido
+            </div>
+            
+        </div>
+
+        <div class="form-group">
+            <label for="senha-usuario">Senha</label>
+            <input class="form-control is-invalid" type="email" id="senha-usuario" placeholder="Digite sua senha">
+            <div class="invalid-feedback">
+                Senha inválida
+            </div>
+        </div>
+
+        <input class="btn btn-primary" type="submit" value="Logar">
+
+    </form>
+
+ 
+
+       <br><br>
+       <div class="input-group">
+            <div class="input-group-prepend">
+               <span class="input-group-text">www</span>
+           </div>
+            <input class="form-control" type="text" placeholder="e-mail">
+           <div class="input-group-append">
+               <span class="input-group-text">com.br</span>
+           </div>
+       </div> 
+
+    
+
+        <br><br>
+    
+ 
+
+        <!--
+        type: checkbox / radio
+        -->
+      
+        <div class="input-group">
+            <div class="input-group-prepend">
+               <div class="input-group-text">
+                   <input type="radio">
+               </div> 
+            </div>
+            <input type="text" class="form-control">
+        </div>
+
+        <br><br>
+
+        <div class="input-group">
+           <div class="input-group-prepend">
+               <span class="input-group-text">nome/e-mail</span>
+           </div>
+           <input class="form-control" type="text" placeholder="e-mail">
+           <input class="form-control" type="password" placeholder="senha">
+       </div> 
+
+       <br><br>
+
+         <!--
+        type: Pesquisar
+        -->
+
+       <div class="input-group">
+           <input class="form-control" type="text" placeholder="Pesquisar" >
+           <div class="input-group-append">
+               <button type="button" class="btn btn-primary">Pesquisar</button>
+           </div>
+       </div>
+
+    </form>
+
+      <br><br>
+
+    <!--Alertas
+
+  alert-primary
+  alert-secondary
+  alert-success
+  alert-danger
+  alert-warning
+  alert-info
+  alert-light
+  alert-dark
+-->
+
+
+
+    <h6>Alerta com botão fechar</h6>
+    <div class="alert alert-danger alert-dismissible">
+      <button class="close" type="button" data-dismiss="alert">
+        &times;
+      </button>
+      <h4>Título</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a metus in purus malesuada vulputate. Sed lacinia quam massa, eu consectetur tortor faucibus sed.</p>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a metus in purus malesuada vulputate. Sed lacinia quam massa, eu consectetur tortor faucibus sed.</p>
+    
+    </div>
+    <br><br>
+
+    <!--Barras de progressso
+
+  alert-primary
+  alert-secondary
+  alert-success
+  alert-danger
+  alert-warning
+  alert-info
+  alert-light
+  alert-dark
+-->
+
+
+    <!--Tipo
+
+ progress-bar-striped - Listrada
+ progress-bar-animated - Animada
+
+-->
+    
+
+    <h6>Barra de progresso</h6>
+    <div class="progress">
+      <div class="progress-bar" style="width: 50%;">50%</div>
+    </div>
+    <br>
+
+
+    <h6>Múltiplas barras</h6>
+    <div class="progress" style="height: 30px">
+      <div class="progress-bar bg-success" style="width: 20%;">Normal</div>
+      <div class="progress-bar bg-danger progress-bar-striped " style="width: 30%;">Striped</div>
+      <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 15%;">Animada</div>
+    </div>
+
+     <!-- Botoes 
+    formatação padrao: btn
+    formatação específicas:
+    btn-primary, btn-secondary, btn-success, btn-info,
+    btn-warning, btn-danger, btn-light, btn-dark, btn-link
+    -->
+    <h6>Botões</h6>
+    <button class="btn btn-dark" type="button">Clique</button>
+
+    <h6>Botões com diferentes tags</h6>
+    <a class="btn btn-info" href="#">Link</a>
+    <button class="btn btn-info" type="submit">Submit</button>
+    <input class="btn btn-info" type="button" value="Button">
+    <input class="btn btn-info" type="submit" value="Input Submit">
+    <input class="btn btn-info" type="reset" value="Reset">
+
+    <!-- Botoes com contorno
+    btn-outline-<formato>
+    -->
+    <h6>Botões com contorno</h6>
+    <button class="btn btn-outline-danger" type="button">Clique</button>
+
+    <!-- Tamanhos de botões
+    opções: btn-lg, btn-sm, btn-block
+    -->
+    <h6>Tamanhos dos botões</h6>
+    <button class="btn btn-info btn-lg" type="button">Grande</button>
+    <button class="btn btn-info" type="button">Normal</button>
+    <button class="btn btn-info btn-sm" type="button">Pequeno</button>
+    <br><br>
+    <button class="btn btn-info btn-block" type="button">Bloco</button>
+
+    <!-- Estados dos botões
+    opções: active, disabled
+    -->
+    <h6>Estados de botões</h6>
+    <button class="btn btn-success" type="button">Normal</button>
+    <button class="btn btn-success active" type="button">Ativo</button>
+    <button class="btn btn-success disabled" type="button">Inativo</button>
+    <br><br>
+    <button class="btn btn-success" type="button" data-toggle="button">Alternar</button>
+
+    <h6>Grupos de botões - horizontal</h6>
+    <div class="btn-group">
+        <button class="btn btn-info" type="button">Esquerda</button>
+        <button class="btn btn-info" type="button">Centro</button>
+        <button class="btn btn-info" type="button">Direita</button>
+    </div>
+
+    <h6>Grupos de botões - vertical</h6>
+    <div class="btn-group-vertical">
+        <button class="btn btn-danger" type="button">Topo</button>
+        <button class="btn btn-danger" type="button">Meio</button>
+        <button class="btn btn-danger" type="button">Fundo</button>
+    </div>
+
+    <h6>Toolbar de botões</h6>
+    <div class="btn-toolbar">
+        <div class="btn-group">
+           <button class="btn btn-danger" type="button">1</button>
+           <button class="btn btn-danger" type="button">2</button>
+           <button class="btn btn-danger" type="button">3</button>
+        </div>
+        <div class="btn-group">
+            <button class="btn btn-danger" type="button">4</button>
+            <button class="btn btn-danger" type="button">5</button>
+        </div>
+    </div>
+
+    <h6>Botões dropdown</h6>
+    <div class="dropdown">
+        <button class="btn btn-success dropdown-toggle" 
+        data-toggle="dropdown" type="button">
+            Clique
+        </button>
+        <div class="dropdown-menu">
+            <a href="#" class="dropdown-item">Link 1</a>
+            <div class="dropdown-divider"></div>
+            <a href="#" class="dropdown-item">Link 2</a>
+            <a href="#" class="dropdown-item">Link 3</a>
+        </div>
+    </div>
+    
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

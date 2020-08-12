@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>Bootstrap - Sistema de grids</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style type="text/css">
+      
+      .item {
+        background: #fe9d9d;
+        border: 1px solid #f94646;
+        height: 50px;
+        width: 50px;
+      }
+
+      .caixa{
+		    height: 150px; 
+      	border: 1px solid #36ae26;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <div class="container">
+
+    	<h7>Até 12 colunas para diferentes dispositivos </h7>
+		  <div class="row caixa">
+	        <div class="item col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">01</div>
+	        <div class="item col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">02</div>
+	        <div class="item col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">03</div>
+	        <div class="item col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">04</div>
+	        <div class="item col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">05</div>
+	        <div class="item col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">06</div>
+	        <div class="item col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">07</div>
+	        <div class="item col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">08</div>
+	        <div class="item col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">09</div>
+	        <div class="item col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">10</div>
+	        <div class="item col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">11</div>
+	        <div class="item col-12 col-sm-6 col-md-4 col-lg-2 col-xl-1">12</div>
+      </div>
+
+       <h7>caixa dentro de caixa</h7>
+      <div class="caixa row">
+        <div class="col-md-6" style="border: 1px solid blue">
+          caixa
+          <div class="row">
+            <div class="col  item">área 1</div>
+            <div class="col-1 item">área 2</div>
+          </div>
+        </div>
+      </div>
+
+
+      <h7>offset</h7>
+      <div class="caixa row">
+        <div class="item col-3">Conteúdo 1</div>
+        <div class="item col-3 offset-md-6">Conteúdo 2</div>
+      </div>
+
+      <h7>Ordenando</h7>
+      <div class="caixa row">
+        <div class="item col-sm-4 order-2">área 1</div>
+        <div class="item col-sm-4 order-3">área 2</div>
+        <div class="item col-sm-4 order-1">área 3</div>
+      </div>
+
+       
+      <h7>Alinhamento vertical</h7>
+      <h7>row align-items-start</h2>
+      <div class="caixa row align-items-start">
+        <div class="item borda">Área 1</div>
+        <div class="item borda">Área 2</div>
+        <div class="item borda">Área 3</div>
+      </div>
+
+      <h7>row align-items-center</h7>
+      <div class="caixa row align-items-center">
+        <div class="item borda">Área 1</div>
+        <div class="item borda">Área 2</div>
+        <div class="item borda">Área 3</div>
+      </div>
+
+      <h7>row align-items-end</h7>
+      <div class="caixa row align-items-end">
+        <div class="item borda">Área 1</div>
+        <div class="item borda">Área 2</div>
+        <div class="item borda">Área 3</div>
+      </div>
+
+       <h7>Alinhamento vertical individual</h7>
+      <div class="caixa row">
+        <div class="col item align-self-start">col align-self-start</div>
+        <div class="col item align-self-center">col align-self-center</div>
+        <div class="col item align-self-end">col align-self-end</div>
+      </div>
+
+      <h7>Alinhamento horizontal</h7>
+      <h7>justify-content-start</h7>
+      <div class="caixa row justify-content-start">
+        <div class="item col-2">Área 1</div>
+        <div class="item col-2">Área 2</div>
+        <div class="item col-2">Área 3</div>
+      </div>
+
+       <h7>justify-content-center</h7>
+      <div class="caixa row justify-content-center">
+        <div class="item col-2">Área 1</div>
+        <div class="item col-2">Área 2</div>
+        <div class="item col-2">Área 3</div>
+      </div>
+
+       <h7>justify-content-end</h7>
+      <div class="caixa row justify-content-end">
+        <div class="item col-2">Área 1</div>
+        <div class="item col-2">Área 2</div>
+        <div class="item col-2">Área 3</div>
+      </div>
+
+      <h7>Distribuição</h7>
+
+      <h7>justify-content-around</h7>
+      <div class="caixa row justify-content-around">
+        <div class="item col-2">Área 1</div>
+        <div class="item col-2">Área 2</div>
+        <div class="item col-2">Área 3</div>       
+      </div>
+
+      <h7>justify-content-between</h7>
+      <div class="caixa row justify-content-between">
+        <div class="item col-2">Área 1</div>
+        <div class="item col-2">Área 2</div>
+        <div class="item col-2">Área 3</div>       
+      </div>
+
+      <h7>Removendo espaçamento</h7>
+      <div class="caixa row no-gutters">
+        <div class="item col-2">Área 1</div>
+        <div class="item col-2">Área 2</div>
+        <div class="item col-2">Área 3</div>
+      </div>
+
+      <h7>Escondendo Area em tela Menor</h7>
+      <div class="caixa row">
+        <div class="item col-2">Área 1</div>
+        <div class="item col-2">Área 2</div>
+        <div class="item col-2 d-none d-md-block">Área Invisivel</div>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
